@@ -187,10 +187,10 @@ def main():
 
     # Directory of Image, Mask folder generated from the preprocessing stage ###
     # Write your own directory                                                 #
-    IMAGE_DIR = '/home/LUNG_DATA/Image/'                                       #
-    MASK_DIR = '/home/LUNG_DATA/Mask/'                                         #
+    IMAGE_DIR = '/research/dept8/jzwang/dataset/lidc/data/Image/'                                       #
+    MASK_DIR = '/research/dept8/jzwang/dataset/lidc/data/Mask/'                                         #
     #Meta Information                                                          #
-    meta = pd.read_csv('/home/LUNG_DATA/meta_csv/meta.csv')                    #
+    meta = pd.read_csv('/research/dept8/jzwang/code/LIDC-IDRI-Segmentation/meta_csv/meta.csv')                    #
     ############################################################################
     # Get train/test label from meta.csv
     meta['original_image']= meta['original_image'].apply(lambda x:IMAGE_DIR+ x +'.npy')
